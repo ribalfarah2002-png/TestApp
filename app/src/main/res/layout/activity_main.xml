@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#FAFAFA">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PZEM-004T Monitor"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="32dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <TextView
+            android:id="@+id/tv_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Press a button to fetch data"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:padding="32dp"
+            android:textColor="#444444"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_energy"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Get Energy (kWh)"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#2196F3"/>
+
+    <Button
+        android:id="@+id/btn_price"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Get Total Cost (SYP)"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:backgroundTint="#4CAF50"/>
+
+    <EditText
+        android:id="@+id/et_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ESP8266 IP Address (e.g. 192.168.1.50)"
+        android:layout_marginTop="32dp"
+        android:text="192.168.1.50"
+        android:textAlignment="center"
+        android:inputType="textUri"/>
+
+</LinearLayout>
